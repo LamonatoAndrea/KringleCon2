@@ -1,0 +1,96 @@
+Return-Path: <bounces+SRS=cBbLv=ZN@faculty.elfu.org>
+X-Original-To: ubuntu@ec2-54-89-48-176.compute-1.amazonaws.com
+Delivered-To: ubuntu@ec2-54-89-48-176.compute-1.amazonaws.com
+Received: from NAM04-CO1-obe.outbound.protection.outlook.com (mail-eopbgr690094.outbound.protection.outlook.com [40.107.69.94])
+	by ec2-54-89-48-176.compute-1.amazonaws.com (Postfix) with ESMTP id 627A245E43
+	for <ubuntu@ec2-54-89-48-176.compute-1.amazonaws.com>; Thu, 21 Sun, 25 Aug 2019 17:17:38 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=ERLC6Ohcxf4znjKohWsXeh5LQCwZ4dgv2nzpF3Y1bQXxVXKx8Gp8ZskftzScwt/WP7yHcteV29FV0dLfL9Vw1GfrqipZPR9lg4CiBH2RQEBHg37xJUzkrlNIeJ8IpsAf7gZ/47p2wXMDtteeAIa1N2E0avVR9CZDTz5WrMjDQowTymTuW75X6FETu0pXrqKvzdmCxkTg2s6/LsIqOotYQXB7uiMfZOTNlXXHtg6vRvYXVNrlCYmfBoaqXBq/9WmJ3rgDle42QEFTp7xrLu5oaTE7IDIcWJAOGv+3mZy+agtIMk6TMFX5ukQwvwPW+9KxLFteeQUQk+DfwN/Fys5jZQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=ani5P7Yav2fdw76zoSBTBln8b31wLHgUjalk9kyn52g=;
+ b=muvWAmPPgxoFSe66+PBr0F4bDzGfCi+0BeKJPTZAvXry8RXE0UAI9qXNu3ZG1mSj0UvQyvB7x7A8tPwanygqEq92DFGKMLsccCblo3N/ElNrgvSD94DXMaPNGwxZfP6uHSvvSYNKXdoTDaXWE/EXSyZbr8iUzk+ecT7kwSYmghuEPiJX3Rb2lNbsJaPhZyRfcpphzENKtUAVl+mdDfDrbcyuYVAwvsoe3gBdtfGlCvAL0CiA+1p5fTXgeH3Vn/5TJREm0dLDKaaCCG1Mz8KALG2ehtdxRtTZ+WhZenlHuflwWSwdyxYpeqTnVHnDgYwQ/9XcRmWh2/6T5qKhm0lfgg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=Elfu257.onmicrosoft.com; s=selector1-Elfu257-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=ani5P7Yav2fdw76zoSBTBln8b31wLHgUjalk9kyn52g=;
+ b=Si3hdMKwkcfohA0hSn5G7gEl9vhIqojSJPWvqNskKESohlAKBs16ffJo+2wkFAzik60oEkYEr3kHW5RqiVd9UTaRwRur2hY3rLS/976x9G2u/WtxBILvWenwEkMjdy0KsfO9nKr1i6SvVt2MnDgzRd6DnOpdqLyZH0NbApE/y1I=
+Received: from CY4PR13CA0077.namprd13.prod.outlook.com (2603:10b6:903:152::15)
+ by DM6PR13MB3659.namprd13.prod.outlook.com (2603:10b6:5:24b::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2474.8; Thu, 21 Sun, 25 Aug
+ 2019 17:17:34 +0000
+Received: from BN7NAM10FT054.eop-nam10.prod.protection.outlook.com
+ (2a01:111:f400:7e8a::204) by CY4PR13CA0077.outlook.office365.com
+ (2603:10b6:903:152::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2495.9 via Frontend
+ Transport; Thu, 21 Sun, 25 Aug 2019 17:17:33 +0000
+Authentication-Results: spf=softfail (sender IP is 144.202.46.214)
+ smtp.mailfrom=eIfu.org; faculty.elfu.org; dkim=none (message not signed)
+ header.d=none;faculty.elfu.org; dmarc=none action=none header.from=eIfu.org;
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ eIfu.org discourages use of 144.202.46.214 as permitted sender)
+Received: from dwarf (144.202.46.214) by
+ BN7NAM10FT054.mail.protection.outlook.com (10.13.157.112) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2474.17 via Frontend Transport; Thu, 21 Sun, 25 Aug 2019 17:17:33 +0000
+Received: from [127.0.0.1] (localhost [127.0.0.1])
+	by dwarf (8.15.2/8.15.2/Debian-15) with ESMTP id xALHHWER207446
+	for <carl.banas@faculty.elfu.org>; Thu, 21 Sun, 25 Aug 2019 17:17:32 GMT
+Date: Thu, 21 Sun, 25 Aug 2019 17:17:32 GMT
+Message-Id: <201911211717.xALHHWER207446@dwarf>
+Content-Type: multipart/mixed; boundary="===============0908378495001921556=="
+MIME-Version: 1.0
+From: =?utf-8?b?QnJhZGx5IEJ1dHRlcmN1cHM=?= <Bradly.Buttercups@eIfu.org>
+To: carl.banas@faculty.elfu.org
+X-Priority:
+X-MSMail-Priority:
+Subject: =?utf-8?b?SG9saWRheSBDaGVlciBBc3NpZ25tZW50IFN1Ym1pc3Npb24=?=
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: f3127d8b-83dd-44fd-94b5-99ae78113a8d:0
+X-Forefront-Antispam-Report:
+	CIP:144.202.46.214;IPV:NLI;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(10019020)(7916004)(34096005)(396003)(136003)(346002)(376002)(39830400003)(448600002)(199004)(189003)(33964004)(5024004)(2351001)(14444005)(2361001)(1560700002)(2906002)(76506006)(568964002)(34206002)(2160300002)(89386003)(2476003)(68406010)(66616009)(71190400001)(33716001)(70586007)(21480400003)(24616004)(81686011)(8276002)(81166006)(26005)(3480700005)(586005)(1076003)(7246003)(426003)(21470400002)(33003)(235185007)(9686003)(86362001)(16586007)(8676002)(356004)(336012)(36906005)(305945005)(81156014)(7126003)(38610400001)(5660300002)(102460200004)(6926008);DIR:OUT;SFP:1102;SCL:1;SRVR:DM6PR13MB3659;H:dwarf;FPR:;SPF:SoftFail;LANG:en;PTR:144.202.46.214.vultr.com;A:1;MX:1;
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 43d148ad-fcd2-4051-ef15-08d76ea6b263
+X-MS-TrafficTypeDiagnostic: DM6PR13MB3659:|DM6PR13MB3659:
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-Transport-Rules-Loop: 1
+X-MS-Oob-TLC-OOBClassifiers: OLM:5236;
+X-Forefront-PRVS: 0228DDDDD7
+X-MS-Exchange-SenderADCheck: 2
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	Pk+QjcB9q3vcCg4E90bSron3cCY6m0wCQGQy+3umtoq3gK/moQO+VZoibYiPSk1Mz+PepUdAKFzhgrqcX/9eOE+ZT2kp0pBZ+CyVJd/QZcPAlLdhkcVAsbUxaaFcnzgozbQfG14JLBxDuBclFQc0zR/XH2/aj9n1V/ce8qusO58K98qEC70UxXVigAcP/Hg26wwsQMvAxr1p7e4iQFzEfD9HGTssBpSDYcOm4EFnKAiOyNPTCDh3CAoUOyA824Be4OerV/8BL9z7Jl6m9H+E24tVLsk6B7tHVEpy4QuBkF3ISGnxnxt5wBxcRy9KLRqDen1clX7u5JmMan33BoWnl3RZ13OGcDnqETZyRxpzS2sL2/Far++6gZwtMHssg96ztexHprh1taYovhHc7ol/9jBeDhT1x6/CVRivsArlSESuBKKC2WwefkB3VoZXRBHD
+X-ExternalRecipientOutboundConnectors: f3127d8b-83dd-44fd-94b5-99ae78113a8d
+X-OriginatorOrg: faculty.elfu.org
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Sun, 25 Aug 2019 17:17:33.0743
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 43d148ad-fcd2-4051-ef15-08d76ea6b263
+X-MS-Exchange-CrossTenant-Id: f3127d8b-83dd-44fd-94b5-99ae78113a8d
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR13MB3659
+
+--===============0908378495001921556==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+ClByb2Zlc3NvciBCYW5hcywgSSBoYXZlIGNvbXBsZXRlZCBteSBhc3NpZ25tZW50LiBQbGVhc2Ug
+b3BlbiB0aGUgYXR0YWNoZWQgemlwIGZpbGUgd2l0aCBwYXNzd29yZCAxMjM0NTY3ODkgYW5kIHRo
+ZW4gb3BlbiB0aGUgd29yZCBkb2N1bWVudCB0byB2aWV3IGl0LiBZb3Ugd2lsbCBoYXZlIHRvIGNs
+aWNrICJFbmFibGUgRWRpdGluZyIgdGhlbiAiRW5hYmxlIENvbnRlbnQiIHRvIHNlZSBpdC4gVGhp
+cyB3YXMgYSBmdW4gYXNzaWdubWVudC4gSSBob3BlIHlvdSBsaWtlIGl0ISAgLS1CcmFkbHkgQnV0
+dGVyY3VwcwoKCg==
+
+--===============0908378495001921556==
+Content-Type: application/
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Buttercups_HOL404_assignment.zip"
+
+Cleaned for your safety. Happy Holidays!
+
+--===============0908378495001921556==--
