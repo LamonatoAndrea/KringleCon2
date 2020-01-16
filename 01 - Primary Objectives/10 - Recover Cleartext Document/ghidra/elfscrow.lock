@@ -1,0 +1,9 @@
+#Ghidra Lock File
+#Thu Jan 02 12:32:44 CET 2020
+OS\ Name=Linux
+OS\ Version=4.19.0-6-amd64
+Username=thedead
+Hostname=asian
+<META>\ Supports\ File\ Channel\ Locking=Channel Lock
+OS\ Architecture=amd64
+Timestamp=1/2/20, 12\:32 PM
