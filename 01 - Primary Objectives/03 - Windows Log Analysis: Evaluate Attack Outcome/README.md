@@ -11,7 +11,7 @@ identifying below 2 potential users:
 * supatree
 
 ### 1.3.3. Flag
-The flag is: ​supatree​.
+The flag is: ​**supatree​**.
 
 ### 1.3.4. Attachments
 #### 1.3.4.1. get4624.py

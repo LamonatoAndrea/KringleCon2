@@ -7,7 +7,7 @@ of the letter? Please find the letter in the Quad.
 The letter is in the upper left corner of the Quad. Clicking on it takes to a redacted PDF at the link: https://downloads.elfu.org/LetterToElfUPersonnel.pdf​.
 Selecting all the document with CTRL+A and pasting the content in a text editor avoids the redaction of its content.
 ### 1.2.3. Flag
-The flag is: ​DEMAND​.
+The flag is: ​**DEMAND​**.
 ### 1.2.4. Attachments
 #### 1.2.4.1. Unredacted text
 Date: February 28, 2019
