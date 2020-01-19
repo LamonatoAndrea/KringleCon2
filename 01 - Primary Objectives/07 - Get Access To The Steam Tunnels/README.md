@@ -21,4 +21,4 @@ The flag is: ​**Krampus Hollyfeld​**.
 ![Outline extracted from sample keys](https://github.com/LamonatoAndrea/KringleCon2/blob/master/01%20-%20Primary%20Objectives/07%20-%20Get%20Access%20To%20The%20Steam%20Tunnels/Outline.png)
 #### 1.7.4.2. Outline overlapped with Krampus key
 ![Outline overlapped with Krampus key](https://github.com/LamonatoAndrea/KringleCon2/blob/master/01%20-%20Primary%20Objectives/07%20-%20Get%20Access%20To%20The%20Steam%20Tunnels/Outline%20overlapped%20with%20Krampus%20key.png)
-![Outline overlapped with Krampus key (detail)]("https://github.com/LamonatoAndrea/KringleCon2/blob/master/01%20-%20Primary%20Objectives/07%20-%20Get%20Access%20To%20The%20Steam%20Tunnels/Outline%20overlapped%20with%20Krampus%20key_detail.png)
+![Outline overlapped with Krampus key_detail]("https://github.com/LamonatoAndrea/KringleCon2/blob/master/01%20-%20Primary%20Objectives/07%20-%20Get%20Access%20To%20The%20Steam%20Tunnels/Outline%20overlapped%20with%20Krampus%20key_detail.png)
