@@ -157,45 +157,45 @@ Got 110 unique malicious IPs after pivoting User agents
 . as $original
 
 | [
-	$original[]
-	| select (
-				(.uri        | contains("'"))       or
-				(.uri        | contains("<script")) or
-				(.uri        | contains("pass"))    or
-				(.uri        | contains(":; };"))   or
-				(.username   | contains("'"))       or
-				(.username   | contains("<script")) or
-				(.username   | contains("pass"))    or
-				(.username   | contains(":; };"))   or
-				(.user_agent | contains("'"))       or
-				(.user_agent | contains("<script")) or
-				(.user_agent | contains("pass"))    or
-				(.user_agent | contains(":; };"))   or
-				(.host       | contains("'"))       or
-				(.host       | contains("<script")) or
-				(.host       | contains("pass"))    or
-				(.host       | contains(":; };"))
-			 )
+    $original[]
+    | select (
+              (.uri        | contains("'"))       or
+              (.uri        | contains("<script")) or
+              (.uri        | contains("pass"))    or
+              (.uri        | contains(":; };"))   or
+              (.username   | contains("'"))       or
+              (.username   | contains("<script")) or
+              (.username   | contains("pass"))    or
+              (.username   | contains(":; };"))   or
+              (.user_agent | contains("'"))       or
+              (.user_agent | contains("<script")) or
+              (.user_agent | contains("pass"))    or
+              (.user_agent | contains(":; };"))   or
+              (.host       | contains("'"))       or
+              (.host       | contains("<script")) or
+              (.host       | contains("pass"))    or
+              (.host       | contains(":; };"))
+             )
 ] as $malicious
 
 | [ 
-	$original[]
-	| select ([.user_agent] | inside([$malicious[].user_agent]))
+    $original[]
+    | select ([.user_agent] | inside([$malicious[].user_agent]))
 ] 
 | group_by(.user_agent)
 | map ({user_agent: .[].user_agent, count: length}) 
 | unique_by (.user_agent)
 | [
-	.[]
-	| select (.count < 3)
+    .[]
+    | select (.count < 3)
 ] as $malicious_ua
 
 | [
-	$original[]
-	| select (
-				([.user_agent] | inside([$malicious_ua[].user_agent])) and 
-				([."id.orig_h"] | inside([$malicious[]."id.orig_h"]) | not)
-			 )
+   $original[]
+   | select (
+             ([.user_agent] | inside([$malicious_ua[].user_agent])) and 
+             ([."id.orig_h"] | inside([$malicious[]."id.orig_h"]) | not)
+            )
 ] 
 | unique_by(."id.orig_h")
 | [.[]."id.orig_h"] as $malicious_ua_ips
