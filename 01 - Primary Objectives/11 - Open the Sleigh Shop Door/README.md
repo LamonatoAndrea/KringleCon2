@@ -107,6 +107,7 @@ I tried copy-paste them inside the lock without success until I removed already 
 ```
 Clicking the button with the code on PCB written into the lock unlocked it as per picture below:
 ![pcb image](https://github.com/LamonatoAndrea/KringleCon2/blob/master/01%20-%20Primary%20Objectives/11%20-%20Open%20the%20Sleigh%20Shop%20Door/pcb_image.png)
+
 P.S.: This lock was done in another moment with respect to previous ones.
 ### 1.11.3. Flag
 The flag is: ​**The Tooth Fairy​**.
