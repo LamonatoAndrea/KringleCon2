@@ -22,14 +22,14 @@ Schema elfu Table #2 has name students [hex 73747564656e7473]
 ```
 
 I decided to focus on the Krampus table retrieving below data from it:
-id|path
---|----
-1|/krampus/0f5f510e.png
-2|/krampus/1cc7e121.png
-3|/krampus/439f15e6.png
-4|/krampus/667d6896.png
-5|/krampus/adb798ca.png
-6|/krampus/ba417715.png
+id | path
+------------ | -------------
+1 | /krampus/0f5f510e.png
+2 | /krampus/1cc7e121.png
+3 | /krampus/439f15e6.png
+4 | /krampus/667d6896.png
+5 | /krampus/adb798ca.png
+6 | /krampus/ba417715.png
 
 Downloading png files from https://studentportal.elfu.org/$PATH I got 6 scrap paper images from where it was possible to get the flag.
 ### 1.9.3. Flag
