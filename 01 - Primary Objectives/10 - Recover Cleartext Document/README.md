@@ -122,3 +122,5 @@ f91889b6e0c2ab34.pdf: data
 fae060fcc3c71ea0.pdf: data
 faed6c286938dad.pdf:  data
 ```
+#### 1.10.4.5. Cover page
+![Cover page](https://github.com/LamonatoAndrea/KringleCon2/blob/master/01%20-%20Primary%20Objectives/10%20-%20Recover%20Cleartext%20Document/Cover%20Page.png)
