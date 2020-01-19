@@ -40,19 +40,20 @@ NOT resp_mime_types="*json*" NOT resp_mime_types="*font*"
 | /apidocs.pdf | 448 |
 
 #### 1.12.5.3. README.md
-\# Sled-O-Matic - Sleigh Route Finder Web API
-\#\#\# Installation
+```
+# Sled-O-Matic - Sleigh Route Finder Web API
+### Installation
 \`\`\`
 sudo apt install python3-pip
 sudo python3 -m pip install -r requirements.txt
 \`\`\`
-\#\#\#\# Running:
+#### Running:
 \`python3 ./srfweb.py\`
-\#\#\#\# Logging in:
+#### Logging in:
 You can login using the default admin pass:
-\`admin 924158F9522B3744F5FCD4D10FAC4356\`
+`admin 924158F9522B3744F5FCD4D10FAC4356\`
 However, it's recommended to change this in the sqlite db to something custom.
-
+```
 #### 1.12.5.4. solveme.py
 ```python
 import json
@@ -158,10 +159,10 @@ Got 110 unique malicious IPs after pivoting User agents
 | [
 	$original[]
 	| select (
-				(.uri		 | contains("'"))       or
-				(.uri		 | contains("<script")) or
-				(.uri 		 | contains("pass"))    or
-				(.uri 		 | contains(":; };"))   or
+				(.uri        | contains("'"))       or
+				(.uri        | contains("<script")) or
+				(.uri        | contains("pass"))    or
+				(.uri        | contains(":; };"))   or
 				(.username   | contains("'"))       or
 				(.username   | contains("<script")) or
 				(.username   | contains("pass"))    or
@@ -170,10 +171,10 @@ Got 110 unique malicious IPs after pivoting User agents
 				(.user_agent | contains("<script")) or
 				(.user_agent | contains("pass"))    or
 				(.user_agent | contains(":; };"))   or
-				(.host 		 | contains("'"))       or
-				(.host 		 | contains("<script")) or
-				(.host 		 | contains("pass"))    or
-				(.host 		 | contains(":; };"))
+				(.host       | contains("'"))       or
+				(.host       | contains("<script")) or
+				(.host       | contains("pass"))    or
+				(.host       | contains(":; };"))
 			 )
 ] as $malicious
 
