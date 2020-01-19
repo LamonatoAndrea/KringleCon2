@@ -34,7 +34,7 @@ NOT resp_mime_types="*json*" NOT resp_mime_types="*font*"
 #### 1.12.5.2. Output of the Splunk query
 
 | uri | count |
-- | -
+|--|--|
 | / | 451 |
 | /README.md | 1 |
 | /apidocs.pdf | 448 |
