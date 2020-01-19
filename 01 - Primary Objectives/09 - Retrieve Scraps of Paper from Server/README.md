@@ -22,6 +22,7 @@ Schema elfu Table #2 has name students [hex 73747564656e7473]
 ```
 
 I decided to focus on the Krampus table retrieving below data from it:
+
 | id | path |
 | ------------ | ------------- |
 | 1 | /krampus/0f5f510e.png |
