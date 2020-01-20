@@ -6,8 +6,6 @@ thedead@asian:~$ whoami
 Andrea Lamonato
 System Security Specialist & SSRI Student
 
-mailto: lamonato.andrea@gmail.com
-
 Github:   https://github.com/LamonatoAndrea
 Linkedin: https://www.linkedin.com/in/andrea-lamonato/
 
