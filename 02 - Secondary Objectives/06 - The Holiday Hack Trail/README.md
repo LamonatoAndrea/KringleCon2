@@ -5,10 +5,10 @@ I don’t know what happened here but I think part of the conversation with Mint
 > One is about web application penetration testing. Good luck, and don't get dysentery!
 
 The Holiday Hack Trail Initial page:
-![The Holiday Hack Trail Initial page]()
+![The Holiday Hack Trail Initial page](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/06%20-%20The%20Holiday%20Hack%20Trail/The%20Holiday%20Hack%20Trail%20Initial%20page.png)
 
 Store page:
-![The Holiday Hack Trail Store page]()
+![The Holiday Hack Trail Store page](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/06%20-%20The%20Holiday%20Hack%20Trail/The%20Holiday%20Hack%20Trail%20Store%20page.png)
 	
 ### 2.6.2. Solution
 #### 2.6.2.1. Easy
@@ -16,10 +16,10 @@ The parameters are passed via the URL with GET requests, it is possible to alter
 hhc://trail.hhc/trail/?difficulty=0&**distance=8000**&money=5000&pace=0&curmonth=7&curday=1&reindeer=2&runners=2&ammo=100&meds=20&food=400&name0=John&health0=100&cond0=0&causeofdeath0=&deathday0=0&deathmonth0=0&name1=Sally&health1=100&cond1=0&causeofdeath1=&deathday1=0&deathmonth1=0&name2=Anna&health2=100&cond2=0&causeofdeath2=&deathday2=0&deathmonth2=0&name3=Kendra&health3=100&cond3=0&causeofdeath3=&deathday3=0&deathmonth3=0
 
 At this point the interface will show that the distance remaining is 0 as per picture below:
-![easy last step]()
+![easy last step](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/06%20-%20The%20Holiday%20Hack%20Trail/easy%20last%20step.png)
 
 Pressing the “GO” button again will take to the winning page:
-![easy winning page]()
+![easy winning page](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/06%20-%20The%20Holiday%20Hack%20Trail/easy%20winning%20page.png)
 
 #### 2.6.2.2. Medium
 Here the parameters are sent via POST request, but are injectable in the same manner as the Easy difficulty level. Below the output obtained by sending the altered request with curl:
@@ -28,7 +28,7 @@ curl 'https://trail.elfu.org/trail/' -H 'Connection: keep-alive' -H 'Cache-Contr
 This resource can be found at <a href='https://trail.elfu.org/fin/?reason=victory&amp;name0=Chris&amp;death0=notdeadyet&amp;name1=Emmanuel&amp;death1=notdeadyet&amp;name2=Chloe&amp;death2=notdeadyet&amp;name3=Jen&amp;death3=notdeadyet&amp;curday=3&amp;curmonth=8&amp;money=3000&amp;reindeer=2&amp;alivecount=4&amp;difficulty=1&amp;hash=91ac54832b5d59c195e196a3ae959e6b&amp;victorytoken={ hash:"f3e41a22416c2397460403fa82d40307f4379da95d41d5e366b55a1e775c5d41", resourceId: "JebediahSpringfield"}'>https://trail.elfu.org/fin/?reason=victory&amp;name0=Chris&amp;death0=notdeadyet&amp;name1=Emmanuel&amp;death1=notdeadyet&amp;name2=Chloe&amp;death2=notdeadyet&amp;name3=Jen&amp;death3=notdeadyet&amp;curday=3&amp;curmonth=8&amp;money=3000&amp;reindeer=2&amp;alivecount=4&amp;difficulty=1&amp;hash=91ac54832b5d59c195e196a3ae959e6b&amp;victorytoken={ hash:"f3e41a22416c2397460403fa82d40307f4379da95d41d5e366b55a1e775c5d41", resourceId: "JebediahSpringfield"}</a>.
 
 Visiting the URL mentioned in the response, below web page is shown:
-![medium winning page]()
+![medium winning page](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/06%20-%20The%20Holiday%20Hack%20Trail/medium%20winning%20page.png)
 
 #### 2.6.2.3. Hard
 At hard level parameters are sent via POST requests and each contains an undocumented hash value. Considering that in the Easy level a verification hash was calculated from the number of points, I thought that this hash may have been a numeric value representing the current points acquired. The decrypt tool from md5online.org confirmed that this value is numeric but it was much lower than what I expected.
@@ -50,7 +50,7 @@ curl 'https://trail.elfu.org/trail/' -H 'Connection: keep-alive' -H 'Cache-Contr
 This resource can be found at <a href='https://trail.elfu.org/fin/?reason=victory&amp;name0=Sam&amp;death0=notdeadyet&amp;name1=Sally&amp;death1=notdeadyet&amp;name2=Joseph&amp;death2=notdeadyet&amp;name3=Evie&amp;death3=notdeadyet&amp;curday=2&amp;curmonth=9&amp;money=1500&amp;reindeer=2&amp;alivecount=4&amp;difficulty=2&amp;hash=57ec46350ce6dbd9881127dd6d102cfb&amp;victorytoken={ hash:"4f112f9623bbac3e927d0c92be2fece33473bce3ed35383ae979c214d39fe43e", resourceId: "02554611-d73c-4881-baa7-9549350ec50b"}'>https://trail.elfu.org/fin/?reason=victory&amp;name0=Sam&amp;death0=notdeadyet&amp;name1=Sally&amp;death1=notdeadyet&amp;name2=Joseph&amp;death2=notdeadyet&amp;name3=Evie&amp;death3=notdeadyet&amp;curday=2&amp;curmonth=9&amp;money=1500&amp;reindeer=2&amp;alivecount=4&amp;difficulty=2&amp;hash=57ec46350ce6dbd9881127dd6d102cfb&amp;victorytoken={ hash:"4f112f9623bbac3e927d0c92be2fece33473bce3ed35383ae979c214d39fe43e", resourceId: "02554611-d73c-4881-baa7-9549350ec50b"}</a>.
 
 Visiting the URL mentioned in the response, below web page is shown:
-![hard winning page]()
+![hard winning page](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/06%20-%20The%20Holiday%20Hack%20Trail/hard%20winning%20page.png)
 
 ### 2.6.3. Afterwords
 Speaking again with Minty Candycane:
