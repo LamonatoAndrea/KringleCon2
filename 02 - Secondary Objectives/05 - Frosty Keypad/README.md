@@ -7,7 +7,7 @@ Speaking with Tangle Coalbox:
 > 2. The code is a prime number.
 > 3. You can probably tell by looking at the keypad which buttons are used.
 
-Frosty Keypad appearance:
+Frosty Keypad appearance:\
 ![Frosty Keypad apperance](https://github.com/LamonatoAndrea/KringleCon2/blob/master/02%20-%20Secondary%20Objectives/05%20-%20Frosty%20Keypad/frosty%20keypad.png)
 
 ### 2.6.2. Solution
