@@ -37,4 +37,4 @@ Our red-clad hero in ordeal!\
 This Christmas must now fall asleep,\
 But next year comes, and troubles creep.\
 And Jack Frost hasn't made a peep,\
-And Jack Frost hasn't made a peep...\
+And Jack Frost hasn't made a peep...
