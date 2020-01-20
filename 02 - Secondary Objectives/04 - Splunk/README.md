@@ -1,77 +1,77 @@
 # 2. Secondary Objectives
 ## 2.4. Splunk
 ### 2.4.1. Description
-Speaking with Prof. Banas:
+Speaking with Prof. Banas:\
 	This term, I'm teaching "HOL 404: The Search for Holiday Cheer in Popular Culture," and I've had quite a shock! I was at home enjoying a nice cup of Gløgg when I had a call from Kent, one of my students who interns at the Elf U SOC. Kent said that my computer has been hacking other computers on campus and that I needed to fix it ASAP! If I don't, he will have to report the incident to the boss of the SOC. Apparently, I can find out more information from this website https://splunk.elfu.org/ with the username: elf / Password: elfsocks. I don't know anything about computer security. Can you please help me?
 
-Chat with Kent:
-	Guest (me)
-		Hi Kent :-)
-	Kent
-		Hi yourself.
-	Guest (me)
-		I ran into Professor Banas. He said you contacted him about his computer being hacked?
-	Kent
-		Oh, well lots of analysts try to make it here in the ELF U SOC, but most of them crack under the pressure
-	Guest (me)
-		Well, can I help?
-	Kent
-		You can try. Go check out #ELFU SOC. Maybe someone there will have time to bring you up to speed. Here's a tip, click on those blinking red dots to the left column and read very carefully.
-	Guest (me)
-		Thanks???
+Chat with Kent:\
+	Guest (me)\
+		Hi Kent :-)\
+	Kent\
+		Hi yourself.\
+	Guest (me)\
+		I ran into Professor Banas. He said you contacted him about his computer being hacked?\
+	Kent\
+		Oh, well lots of analysts try to make it here in the ELF U SOC, but most of them crack under the pressure\
+	Guest (me)\
+		Well, can I help?\
+	Kent\
+		You can try. Go check out #ELFU SOC. Maybe someone there will have time to bring you up to speed. Here's a tip, click on those blinking red dots to the left column and read very carefully.\
+	Guest (me)\
+		Thanks???\
 
-Chat with #ELFU SOC:
-	Cosmo Jingleberg
-		Hey did you all see that beaconing detection from RITA?
-	Zippy Frostington
-		Yep. And we have some system called 'sweetums' here on campus communicating with the same weird IP
-	Alice Bluebird
-		Gah... that's Professor Banas' system from over in the Polar Studies department
-	Guest (me)
-		That's why I'm here, actually...Kent sent me to this channel to help with Prof. Banas' system
-	Alice Bluebird
-		smh...I'll DM you
+Chat with #ELFU SOC:\
+	Cosmo Jingleberg\
+		Hey did you all see that beaconing detection from RITA?\
+	Zippy Frostington\
+		Yep. And we have some system called 'sweetums' here on campus communicating with the same weird IP\
+	Alice Bluebird\
+		Gah... that's Professor Banas' system from over in the Polar Studies department\
+	Guest (me)\
+		That's why I'm here, actually...Kent sent me to this channel to help with Prof. Banas' system\
+	Alice Bluebird\
+		smh...I'll DM you\
 
-Chat with Alice Bluebird:
-	Alice Bluebird
-		hey hey...
-	Guest (me)
-		Hiya Alice
-	Alice Bluebird
-		I see you've met Kent
-	Guest (me)
-		briefly. He seems...frustrated
-	Alice Bluebird
-		Pretty accurate. He's been here a long time and he struts around like some sort of cyber-peacock
-	Alice Bluebird
-		Some time (preferably over good eggnog) I'll tell you about his horrible opsec, too
-	Alice Bluebird
-		Suffice to say we have adversaries poking fun at him during attacks. JML
-	Guest (me)
-		JML?
-	Alice Bluebird
-		jingle my life
-	Guest (me)
-		LOL!
-	Alice Bluebird
-		So Cosmo, Zippy, and I have a good handle on what went down with Professor B's system
-	Guest (me)
-		ah, gotcha
-	Alice Bluebird
-		But we can always use good analysts here in the SOC, so if you can figure it out, we'll put in a good word with the boss of the SOC.
-	Guest (me)
-		Let's do this!
-	Alice Bluebird
-		Okay. Your goal is to find the message for Kent that the adversary embedded in this attack.
-	Alice Bluebird
-		If you think you have the chops for that, don't let me slow you down. Get searching and enter the Challenge Question answer when you've found it.
-	Alice Bluebird
-		You'll need to know some things, though:
-		We use Splunk, so click here or hit the Search link in the navigation up above to get started.
-		I copied some raw files here or click the File Archive link in the navigation. (You'll find some references to the File Archive contents in Splunk)
-		You'll need to use both of these resources to answer the Challenge Question!
-	Alice Bluebird
-		Don't worry though, I can get you started down the right path with a few hints if you need 'em. All you have to do is answer the first training question. If you've read all the chat windows here, you already have the answer ;-)
+Chat with Alice Bluebird:\
+	Alice Bluebird\
+		hey hey...\
+	Guest (me)\
+		Hiya Alice\
+	Alice Bluebird\
+		I see you've met Kent\
+	Guest (me)\
+		briefly. He seems...frustrated\
+	Alice Bluebird\
+		Pretty accurate. He's been here a long time and he struts around like some sort of cyber-peacock\
+	Alice Bluebird\
+		Some time (preferably over good eggnog) I'll tell you about his horrible opsec, too\
+	Alice Bluebird\
+		Suffice to say we have adversaries poking fun at him during attacks. JML\
+	Guest (me)\
+		JML?\
+	Alice Bluebird\
+		jingle my life\
+	Guest (me)\
+		LOL!\
+	Alice Bluebird\
+		So Cosmo, Zippy, and I have a good handle on what went down with Professor B's system\
+	Guest (me)\
+		ah, gotcha\
+	Alice Bluebird\
+		But we can always use good analysts here in the SOC, so if you can figure it out, we'll put in a good word with the boss of the SOC.\
+	Guest (me)\
+		Let's do this!\
+	Alice Bluebird\
+		Okay. Your goal is to find the message for Kent that the adversary embedded in this attack.\
+	Alice Bluebird\
+		If you think you have the chops for that, don't let me slow you down. Get searching and enter the Challenge Question answer when you've found it.\
+	Alice Bluebird\
+		You'll need to know some things, though:\
+		We use Splunk, so click here or hit the Search link in the navigation up above to get started.\
+		I copied some raw files here or click the File Archive link in the navigation. (You'll find some references to the File Archive contents in Splunk)\
+		You'll need to use both of these resources to answer the Challenge Question!\
+	Alice Bluebird\
+		Don't worry though, I can get you started down the right path with a few hints if you need 'em. All you have to do is answer the first training question. If you've read all the chat windows here, you already have the answer ;-)\
 ### 2.4.2. Training question #1
 #### 2.4.2.1. Description
 What is the short host name of Professor Banas' computer?
