@@ -21,7 +21,7 @@ Hobbies list as of today:
 
 ...yes, the hostname of my laptop is “asian” ➤ “asus” + “debian” :)
 ```
-
+ 
 ## 0.1. Honorable Mention 
 I got myself an [Honorable Mention](https://holidayhackchallenge.com/2019/winners_answers.html) submitting the writeup for this challenge, thank you guys!
 ![honorable mention](honorable_mention.png)
